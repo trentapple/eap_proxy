@@ -9,3 +9,5 @@ CONFIG_OPTIONS=(
 DAEMON_OPTIONS=(--daemon --pidfile /var/run/eap_proxy.pid --syslog)
 /usr/bin/python /config/scripts/eap_proxy.py \
     "$IF_WAN" "$IF_ROUTER" "${CONFIG_OPTIONS[@]}" "${DAEMON_OPTIONS[@]}" &
+
+ifconfig $IF_ROUTER up
