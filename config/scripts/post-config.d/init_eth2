@@ -1,0 +1,4 @@
+#!/bin/vbash
+
+/sbin/ifconfig eth2 up &
+
